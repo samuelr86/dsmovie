@@ -1,29 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300;400;700&family=Playball&display=swap');
 
-*{
+/*variáveis de cores (globais)*/
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #fff;
+}
+
+* {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
-html, body{
-    background-color: #ddd;
+h1, h2, h3 {
+    margin: 0;
 }
 
-header{
-    background-color: #4d41c0;
-    color: #fff;
+html, body {
+    background-color: var(--bg-gray);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 /*container class do bootstrap*/
 
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-a, a:hover{
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+.dsmovie-contact-container img{
+    margin-right: 10px;
+}
+nav a {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a, a:hover {
     color: unset;
     text-decoration: none;
 }
